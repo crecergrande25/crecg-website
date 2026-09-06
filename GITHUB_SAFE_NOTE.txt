@@ -1,0 +1,11 @@
+CRECG GITHUB-SAFE WEBSITE PACKAGE
+
+- Final private brand logo is not included.
+- Generic CRECG logo is used instead.
+- Website-facing company name is CRECG.
+- Automation Solutions division added.
+- Industrial IoT, Modules & PLC product category added.
+- Division cards use process background images.
+- Repetitive page-hero enquiry CTAs were replaced with contextual labels.
+- Client section is included as logo-only slots.
+- Public-safe placeholder profile PDFs are included instead of private branded profile files.

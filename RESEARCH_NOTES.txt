@@ -1,0 +1,28 @@
+CRECG WEBSITE V6 — RESEARCH NOTES
+
+The V6 product catalogue and compliance wording were built using current official/OEM information reviewed on 03 September 2026. Key basis:
+
+LASER CUTTING / WELDING
+- Precitec lists cutting/welding head wear and spare parts including nozzles, protective glasses/windows and ceramic parts.
+- TRUMPF explains that protective glass protects laser optics from spatter, smoke/steam and contamination and must match laser/process requirements.
+- Raytools cutting-head information shows single/double/custom nozzle styles, multiple cover-glass positions, water cooling and model-specific optical arrangements.
+- Raytools welding-head information shows replaceable cover glasses, coaxial/side-blow nozzle arrangements and optional wire feeders on applicable heads.
+
+LASER MARKING
+- Coherent and other optics manufacturers describe F-theta scan lenses for laser marking/engraving/cutting. Matching wavelength, focal length, scan field and system geometry matters.
+
+LASER CHILLERS
+- TEYU describes industrial chiller water circuits containing components such as water pump, flow switch/sensor, temperature probe, solenoid valve and filter. Their maintenance material also covers filter and pump replacement.
+- Hanli material notes circulation-pump, filter and flow/temperature monitoring as important elements in laser chiller operation.
+
+INDIAN BUSINESS / COMPLIANCE
+- Udyam Registration: official Government of India portal states registration is free/paperless and private agencies are not authorised to perform MSME registration. Website therefore describes CRECG's role as guidance/readiness, not issuer/registration authority.
+- GS1 India is the authorised source for GTIN/EAN barcode allocation in India.
+- DGFT identifies IEC as the key business identification number generally required for import/export, subject to exemptions.
+- NSIC states MSEs with Udyam registration are eligible to apply for SPRS; issue remains with NSIC subject to requirements/inspection.
+- BIS notes certification is generally voluntary but becomes mandatory for products covered by applicable Quality Control Orders. Website therefore says applicability review/coordination, not automatic certification.
+
+SEO / TECHNICAL
+- Google Search Central recommends concise unique page titles and Organization structured data with relevant business details, plus sitemap submission after deployment. V6 includes unique titles/descriptions, Organization JSON-LD, a domain configuration script, robots.txt and sitemap generation.
+
+V6 deliberately avoids claims such as 'authorised dealer', 'accredited inspection body', 'certificate issuer', 'India's leading', fabricated customer counts or fake testimonials.
