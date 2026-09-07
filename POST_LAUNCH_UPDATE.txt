@@ -1,0 +1,23 @@
+CRECG POST-LAUNCH UPDATE
+
+Configured for: https://crecergrande.in
+
+This build includes:
+- canonical URLs for the live domain
+- Open Graph URLs/images updated to the live domain
+- sitemap.xml
+- robots.txt pointing to the sitemap
+- Instagram @crecer_grande added to header/footer
+- Organization structured data updated with the live URL, logo and Instagram profile
+
+HOW TO UPDATE GITHUB
+1. Extract this ZIP.
+2. Open your existing GitHub website repository.
+3. Upload/replace the CONTENTS of this folder at the repository root.
+4. Commit the changes (example: Post-launch SEO and sitemap update).
+5. Wait for GitHub Pages to redeploy.
+6. Confirm these URLs open:
+   https://crecergrande.in/sitemap.xml
+   https://crecergrande.in/robots.txt
+
+After that, submit the sitemap in Google Search Console.
