@@ -1,0 +1,13 @@
+
+(async()=>{
+ const catalog=await CRECG_CATALOG.get(); const products=catalog.products.filter(p=>p.published!==false&&(p.calculator&&p.calculator.enabled));
+ const prodSel=document.getElementById('calc-product'),varSel=document.getElementById('calc-variant'),qty=document.getElementById('calc-qty'),result=document.getElementById('estimate-result');
+ prodSel.innerHTML=products.map(p=>`<option value="${p.id}">${CRECG_UTIL.escape(p.title)}</option>`).join('');
+ const qp=CRECG_UTIL.query('product');if(qp&&products.some(p=>p.id===qp))prodSel.value=qp;
+ function loadVariants(){const p=products.find(x=>x.id===prodSel.value);varSel.innerHTML=(p?.variants||[]).map(v=>`<option value="${v.id}">${CRECG_UTIL.escape(v.name)}</option>`).join('');calc();}
+ function calc(){const p=products.find(x=>x.id===prodSel.value),v=p?.variants?.find(x=>x.id===varSel.value),q=Math.max(1,parseInt(qty.value||'1',10));if(!p||!v){return}
+  if(v.price==null||q<(v.minQty||1)){const msg=v.price==null?'Online rate is not configured for this item.':`Configured reference rate applies from ${v.minQty} ${v.unit||'unit'}(s).`;result.innerHTML=`<span class="status warn">FORMAL QUOTE REQUIRED</span><h2>${CRECG_UTIL.escape(p.title)}</h2><p>${msg}</p><div class="note">${CRECG_UTIL.escape(v.priceNote||p.calculator?.disclaimer||'Final quotation is required after technical review.')}</div><div class="actions"><a class="btn btn-dark" href="contact.html?product=${encodeURIComponent(p.title)}&variant=${encodeURIComponent(v.name)}&qty=${q}">Send Requirement</a></div>`;return}
+  const subtotal=Number(v.price)*q,gstRate=Number(v.gst||0),gst=subtotal*gstRate/100,total=subtotal+gst;result.innerHTML=`<span class="status ok">INDICATIVE ESTIMATE</span><h2>${CRECG_UTIL.escape(p.title)}</h2><p class="muted">${CRECG_UTIL.escape(v.name)}</p><div class="amount">${CRECG_UTIL.money(total)}</div><div class="breakdown"><div><span>Unit rate</span><b>${CRECG_UTIL.money(v.price)}</b></div><div><span>Quantity</span><b>${q}</b></div><div><span>Taxable value</span><b>${CRECG_UTIL.money(subtotal)}</b></div><div><span>GST ${gstRate}%</span><b>${CRECG_UTIL.money(gst)}</b></div><div><span>Indicative total</span><b>${CRECG_UTIL.money(total)}</b></div></div><div class="note" style="margin-top:16px">${CRECG_UTIL.escape(v.priceNote||p.calculator?.disclaimer||'Indicative only; final quotation is required.')}</div><div class="actions"><a class="btn btn-dark" href="contact.html?product=${encodeURIComponent(p.title)}&variant=${encodeURIComponent(v.name)}&qty=${q}&estimate=${encodeURIComponent(CRECG_UTIL.money(total))}">Request Formal Quote</a></div>`;
+ }
+ prodSel.addEventListener('change',loadVariants);varSel.addEventListener('change',calc);qty.addEventListener('input',calc);loadVariants();
+})();
