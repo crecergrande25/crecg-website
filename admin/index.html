@@ -1,0 +1,18 @@
+<!doctype html><html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow,noarchive"><title>Crecer Grande Admin Center</title><link rel="icon" href="../assets/images/favicon.png"><link rel="stylesheet" href="../assets/css/site.css"><link rel="stylesheet" href="../assets/css/admin-cms.css">
+</head><body class="cg-admin-body">
+<div id="backend-warning" class="backend-warning hidden"><b>Backend not connected.</b> Complete the one-time Supabase setup from the private package before using the online Admin Center.</div>
+<section id="login-view" class="login-screen">
+  <div class="login-card"><img src="../assets/images/logo.png" alt="Crecer Grande" class="login-logo"><div class="admin-kicker">Secure Website Administration</div><h1>Admin Login</h1><p>Use an authorised Crecer Grande administrator account.</p>
+  <form id="login-form"><label>Username<input id="login-username" autocomplete="username" required placeholder="Ramiz Islam"></label><label>Password<input id="login-password" type="password" autocomplete="current-password" required></label><button class="admin-primary" type="submit">Sign In</button><div id="login-message" class="form-message"></div></form>
+  <a href="../index.html" class="back-site">← Back to website</a></div>
+</section>
+<section id="admin-view" class="admin-app hidden">
+  <aside class="admin-sidebar"><div class="admin-brand"><img src="../assets/images/logo.png" alt="Crecer Grande"><div><b>ADMIN CENTER</b><small>Website V1.9.3</small></div></div><nav id="admin-nav">
+    <button data-tab="dashboard" class="active">Dashboard</button><button data-tab="company">Company & Contact</button><button data-tab="branding">Branding & SEO</button><button data-tab="homepage">Homepage</button><button data-tab="pages">Page Text</button><button data-tab="divisions">Divisions</button><button data-tab="products">Products & Variants</button><button data-tab="estimates">Estimate Rules</button><button data-tab="projects">Projects</button><button data-tab="resources">Resources / PDFs</button><button data-tab="media">Media Library</button><button data-tab="enquiries">Enquiries</button><button data-tab="audit">Audit Log</button><button data-tab="account">My Account</button>
+  </nav><div class="sidebar-foot"><a href="../index.html" target="_blank">Open Website ↗</a><button id="logout-btn">Sign Out</button></div></aside>
+  <main class="admin-main"><header class="admin-top"><div><div class="admin-kicker">Crecer Grande Website Manager</div><h1 id="tab-title">Dashboard</h1></div><div class="admin-user"><span id="admin-name"></span><span id="save-state">Connected</span></div></header><div id="tab-host" class="tab-host"></div></main>
+</section>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modal-title">Edit</h2><button id="modal-close" aria-label="Close">×</button></div><div id="modal-body"></div></div></div>
+<script src="../assets/js/backend-config.js"></script><script src="../assets/js/cg-backend.js"></script><script src="../assets/js/admin-cms.js"></script>
+</body></html>
