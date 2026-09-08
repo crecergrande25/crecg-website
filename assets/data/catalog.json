@@ -197,6 +197,32 @@
       "variants": [],
       "featured": false,
       "source_file": "products/rapid-prototyping.html"
+    },
+    {
+      "title": "Micro Limit Switch Triggering Mechanism for WTG Holders",
+      "slug": "electronic-component",
+      "category": "Electronic Component",
+      "description": "A Micro Limit Switch Triggering Set for WTG Holders refers to a specialized assembly used in Wind Turbine Generators (WTGs) to monitor and control safety mechanism states—such as rotor brakes, access locking systems, pitch control limits, or maintenance lock pins.",
+      "image": "prod-obsolete.webp",
+      "published": true,
+      "featured": false,
+      "variants": [
+        {
+          "name": "Single Holder Micro Switch Triggering Set",
+          "sku": "",
+          "price": null,
+          "gst": 18.0,
+          "moq": 10
+        },
+        {
+          "name": "Double Holder Micro Switch Triggering Set",
+          "sku": "",
+          "price": null,
+          "gst": 18.0,
+          "moq": 10
+        }
+      ],
+      "source_file": ""
     }
   ]
 }
