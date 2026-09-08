@@ -1,7 +1,7 @@
 
-const $=s=>document.querySelector(s);let catalog={version:'1.9.2',products:[]};
+const $=s=>document.querySelector(s);let catalog={version:'1.9.2.1',products:[]};
 async function hash(t){const b=new TextEncoder().encode(t);const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('');}
-async function init(){try{catalog=await fetch('../assets/data/catalog.json').then(r=>r.json())}catch(e){catalog=JSON.parse(localStorage.getItem('cg-admin-catalog')||JSON.stringify(window.CG_DEFAULT_CATALOG||{version:'1.9.2',products:[]}))}render();}
+async function init(){try{catalog=await fetch('../assets/data/catalog.json').then(r=>r.json())}catch(e){catalog=JSON.parse(localStorage.getItem('cg-admin-catalog')||JSON.stringify(window.CG_DEFAULT_CATALOG||{version:'1.9.2.1',products:[]}))}render();}
 function saveLocal(){localStorage.setItem('cg-admin-catalog',JSON.stringify(catalog));render();}
 function render(){const body=$('#product-rows');if(!body)return;body.innerHTML='';catalog.products.forEach((p,i)=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${p.title}</td><td>${p.category}</td><td>${p.published?'Published':'Hidden'}</td><td>${p.variants?.length||0}</td><td><div class="admin-actions"><button class="mini-btn alt" onclick="editProduct(${i})">Edit</button><button class="mini-btn" onclick="toggleProduct(${i})">${p.published?'Hide':'Publish'}</button><button class="mini-btn alt" onclick="removeProduct(${i})">Delete</button></div></td>`;body.appendChild(tr)});}
 window.toggleProduct=i=>{catalog.products[i].published=!catalog.products[i].published;saveLocal()};window.removeProduct=i=>{if(confirm('Delete this local product draft?')){catalog.products.splice(i,1);saveLocal()}};

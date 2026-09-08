@@ -1,5 +1,5 @@
 {
-  "version": "1.9.2",
+  "version": "1.9.2.1",
   "products": [
     {
       "slug": "laser-consumables",
@@ -13,28 +13,28 @@
           "name": "Cutting nozzles",
           "sku": "CG-LAS-NOZ",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Protective / cover glass",
           "sku": "CG-LAS-LENS",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Ceramic parts / holders",
           "sku": "CG-LAS-CER",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Welding / marking wear parts",
           "sku": "CG-LAS-WM",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         }
       ],
@@ -53,28 +53,28 @@
           "name": "For 1500W-class laser system",
           "sku": "CG-LCP-1500",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "For 2000W-class laser system",
           "sku": "CG-LCP-2000",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "For 3000W-class laser system",
           "sku": "CG-LCP-3000",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "For 6000W-class laser system",
           "sku": "CG-LCP-6000",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         }
       ],
@@ -93,21 +93,21 @@
           "name": "Upper punch / standard profile",
           "sku": "CG-BEND-PUNCH",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "V-die / lower tool",
           "sku": "CG-BEND-VDIE",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Segmented / special tooling",
           "sku": "CG-BEND-SPECIAL",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         }
       ],
@@ -126,28 +126,28 @@
           "name": "PLC / controller hardware",
           "sku": "CG-AUTO-PLC",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "I/O / interface modules",
           "sku": "CG-AUTO-IO",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Industrial IoT gateway / edge device",
           "sku": "CG-AUTO-IOT",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         },
         {
           "name": "Control housing / DIN-rail accessories",
           "sku": "CG-AUTO-HSG",
           "price": null,
-          "gst": 18,
+          "gst": 18.0,
           "moq": 1
         }
       ],

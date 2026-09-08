@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const form=document.querySelector('#rfq-form');
   if(form){
     const build=()=>{const f=new FormData(form);const v=n=>(f.get(n)||'').toString().trim();return `Hello Crecer Grande,\n\nI have an enquiry.\n\nName: ${v('name')}\nCompany: ${v('company')}\nPhone: ${v('phone')}\nEmail: ${v('email')}\nRequirement Type: ${v('type')}\nMachine / Model: ${v('machine')}\nPart No.: ${v('part')}\nQuantity: ${v('qty')}\n\nRequirement:\n${v('message')}\n\nI can share drawings/photos separately.`};
-    document.querySelector('#send-wa')?.addEventListener('click',()=>window.open('https://wa.me/917003301781?text='+encodeURIComponent(build()),'_blank','noopener'));
+    document.querySelector('#send-wa')?.addEventListener('click',()=>window.open('https://wa.me/916291001781?text='+encodeURIComponent(build()),'_blank','noopener'));
     document.querySelector('#send-mail')?.addEventListener('click',()=>location.href='mailto:crecergrande@outlook.com?subject='+encodeURIComponent('Crecer Grande Website Enquiry')+'&body='+encodeURIComponent(build()));
   }
 });

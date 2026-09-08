@@ -1,6 +1,6 @@
-CRECER GRANDE WEBSITE V1.9.2 — GITHUB PAGES DEPLOYMENT
+CRECER GRANDE WEBSITE V1.9.2.1 — GITHUB PAGES DEPLOYMENT
 
-This folder is the source template used by Crecer Grande Website Manager v1.0.
+This folder is the source template used by Crecer Grande Website Manager v1.0.1.
 Do not upload Website_Source itself.
 
 The generated DEPLOY_TO_GITHUB output contains the live website files, including:
