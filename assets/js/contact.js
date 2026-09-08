@@ -1,6 +1,0 @@
-
-(()=>{const form=document.getElementById('rfq-form');if(!form)return;const q=new URLSearchParams(location.search);['product','variant','qty','estimate'].forEach(k=>{const e=form.elements[k];if(e&&q.get(k))e.value=q.get(k)});
- function build(){const f=new FormData(form),v=n=>(f.get(n)||'').toString().trim();return `Hello CRECG,\n\nI have an enquiry.\n\nName: ${v('name')}\nCompany: ${v('company')}\nPhone: ${v('phone')}\nEmail: ${v('email')}\nRequirement Type: ${v('type')}\nProduct: ${v('product')}\nVariant: ${v('variant')}\nQuantity: ${v('qty')}\nIndicative Estimate: ${v('estimate')}\nMachine / Model: ${v('machine')}\nPart No.: ${v('part')}\n\nRequirement:\n${v('message')}`}
- function save(){const f=new FormData(form);const o=Object.fromEntries(f.entries());o.id='ENQ-'+Date.now();o.createdAt=new Date().toISOString();CRECG_UTIL.saveEnquiry(o);return o}
- document.getElementById('send-wa').addEventListener('click',()=>{if(!form.reportValidity())return;save();window.open(`https://wa.me/91${CRECG_SITE.phone}?text=${encodeURIComponent(build())}`,'_blank','noopener')});
- document.getElementById('send-mail').addEventListener('click',()=>{if(!form.reportValidity())return;save();location.href=`mailto:${CRECG_SITE.email}?subject=${encodeURIComponent('CRECG Website Enquiry')}&body=${encodeURIComponent(build())}`});})();
