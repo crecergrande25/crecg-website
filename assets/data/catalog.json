@@ -1,0 +1,202 @@
+{
+  "version": "1.9.2",
+  "products": [
+    {
+      "slug": "laser-consumables",
+      "title": "Laser Cutting, Welding & Marking Components",
+      "category": "Laser Equipment",
+      "published": true,
+      "image": "prod-laser.webp",
+      "description": "Nozzles, protective glasses, ceramic parts, lens holders, selected optics and laser-head wear parts.",
+      "variants": [
+        {
+          "name": "Cutting nozzles",
+          "sku": "CG-LAS-NOZ",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Protective / cover glass",
+          "sku": "CG-LAS-LENS",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Ceramic parts / holders",
+          "sku": "CG-LAS-CER",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Welding / marking wear parts",
+          "sku": "CG-LAS-WM",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        }
+      ],
+      "featured": true,
+      "source_file": "products/laser-consumables.html"
+    },
+    {
+      "slug": "laser-chiller-pumps",
+      "title": "Laser Chiller Pumps",
+      "category": "Laser Chillers",
+      "published": true,
+      "image": "prod-pump.webp",
+      "description": "Replacement pump sourcing for chiller systems serving 1500W, 2000W, 3000W and 6000W laser-system classes — exact pump matched by chiller and duty.",
+      "variants": [
+        {
+          "name": "For 1500W-class laser system",
+          "sku": "CG-LCP-1500",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "For 2000W-class laser system",
+          "sku": "CG-LCP-2000",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "For 3000W-class laser system",
+          "sku": "CG-LCP-3000",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "For 6000W-class laser system",
+          "sku": "CG-LCP-6000",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        }
+      ],
+      "featured": true,
+      "source_file": "products/laser-chiller-pumps.html"
+    },
+    {
+      "slug": "sheet-metal-bending-tooling",
+      "title": "Sheet-Metal Bending Tooling",
+      "category": "Sheet Metal",
+      "published": true,
+      "image": "prod-bending.webp",
+      "description": "Press-brake punches, V-dies, segmented tooling and related bending components subject to machine and application compatibility.",
+      "variants": [
+        {
+          "name": "Upper punch / standard profile",
+          "sku": "CG-BEND-PUNCH",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "V-die / lower tool",
+          "sku": "CG-BEND-VDIE",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Segmented / special tooling",
+          "sku": "CG-BEND-SPECIAL",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        }
+      ],
+      "featured": true,
+      "source_file": "products/sheet-metal-bending-tooling.html"
+    },
+    {
+      "slug": "plc-iot-housings",
+      "title": "PLC, I/O, Industrial IoT & Housings",
+      "category": "Automation",
+      "published": true,
+      "image": "prod-plc.webp",
+      "description": "PLCs, HMIs, I/O modules, gateways, sensors, control components, DIN-rail hardware and industrial housings.",
+      "variants": [
+        {
+          "name": "PLC / controller hardware",
+          "sku": "CG-AUTO-PLC",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "I/O / interface modules",
+          "sku": "CG-AUTO-IO",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Industrial IoT gateway / edge device",
+          "sku": "CG-AUTO-IOT",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        },
+        {
+          "name": "Control housing / DIN-rail accessories",
+          "sku": "CG-AUTO-HSG",
+          "price": null,
+          "gst": 18,
+          "moq": 1
+        }
+      ],
+      "featured": true,
+      "source_file": "products/plc-iot-housings.html"
+    },
+    {
+      "slug": "laser-chiller-spares",
+      "title": "Laser Chiller Service Spares",
+      "category": "Laser Chillers",
+      "published": true,
+      "image": "prod-chiller-spares.webp",
+      "description": "Filters, flow devices, temperature sensors, level components, hoses, valves, fittings and selected service parts.",
+      "variants": [],
+      "featured": false,
+      "source_file": "products/laser-chiller-spares.html"
+    },
+    {
+      "slug": "cnc-vmc-spares",
+      "title": "CNC / VMC & Machine Spares",
+      "category": "Machine Spares",
+      "published": true,
+      "image": "prod-cnc.webp",
+      "description": "Selected bearings, switches, sensors, belts, lubrication parts, electrical spares and maintenance-related components.",
+      "variants": [],
+      "featured": false,
+      "source_file": "products/cnc-vmc-spares.html"
+    },
+    {
+      "slug": "custom-obsolete-spares",
+      "title": "Custom / Obsolete Machine Spares",
+      "category": "Custom Spares",
+      "published": true,
+      "image": "prod-obsolete.webp",
+      "description": "Identification, reverse engineering, sourcing or manufacture of hard-to-find industrial parts where technically feasible.",
+      "variants": [],
+      "featured": false,
+      "source_file": "products/custom-obsolete-spares.html"
+    },
+    {
+      "slug": "rapid-prototyping",
+      "title": "3D Printing & Rapid Prototyping",
+      "category": "Manufacturing",
+      "published": true,
+      "image": "prod-3d.webp",
+      "description": "Resin and FDM prototyping, design-validation parts, low-volume components and inserts/finishing where applicable.",
+      "variants": [],
+      "featured": false,
+      "source_file": "products/rapid-prototyping.html"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+CRECER GRANDE WEBSITE V1.9.2 — IMPLEMENTATION NOTES
+
+- GitHub Pages publishes static files from the configured publishing source. The site therefore remains static HTML/CSS/JavaScript at deployment time, while the local management/build layer is Python-based.
+- .nojekyll is retained because the site is built outside Jekyll.
+- CNAME is retained for the custom apex domain crecergrande.in.
+- sitemap.xml uses absolute canonical URLs under https://crecergrande.in.
+- Product compatibility wording remains conservative for model-dependent laser, chiller, automation and machine-spare products.
+- Automated estimate tools are planning aids; model-specific sales prices are not invented when a formal quotation is required.
+- Public browser-local admin functionality is not treated as secure authentication. Website Manager v1.0 is the local editing/publishing tool in this package.
