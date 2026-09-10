@@ -1,14 +1,16 @@
 CRECER GRANDE WEBSITE V1.9.3 — GITHUB PAGES DEPLOYMENT
-======================================================
 
-Upload the CONTENTS of this folder to the root of the existing GitHub Pages repository.
-Keep:
-- CNAME
-- .nojekyll
-- robots.txt
+This folder is the source template used by Crecer Grande Website Manager v1.0.1.
+Do not upload Website_Source itself.
+
+The generated DEPLOY_TO_GITHUB output contains the live website files, including:
+- index.html at repository root
+- CNAME for crecergrande.in
+- .nojekyll to disable Jekyll processing
 - sitemap.xml
+- robots.txt
+- static assets
+- product/detail pages
+- division/detail pages
 
-The custom domain in CNAME is crecergrande.in.
-
-If backend-config.js still says enabled:false, the public site works from bundled fallback content but online Admin Login will show that backend setup is required.
-After the private one-time setup, backend-config.js contains only the Supabase Project URL and publishable key; it must never contain a secret key.
+For branch-based GitHub Pages deployment, upload the CONTENTS of DEPLOY_TO_GITHUB to the root of the publishing branch.

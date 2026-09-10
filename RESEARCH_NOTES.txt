@@ -1,4 +1,4 @@
-CRECER GRANDE WEBSITE V1.9.2.1 — IMPLEMENTATION NOTES
+CRECER GRANDE WEBSITE V1.9.3 — IMPLEMENTATION NOTES
 
 - GitHub Pages publishes static files from the configured publishing source. The site therefore remains static HTML/CSS/JavaScript at deployment time, while the local management/build layer is Python-based.
 - .nojekyll is retained because the site is built outside Jekyll.

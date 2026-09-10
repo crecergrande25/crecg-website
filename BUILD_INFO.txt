@@ -1,2 +1,3 @@
 Crecer Grande Website V1.9.3
-Online Admin Center + Supabase CMS
+Supabase-backed Admin Center + first-party private analytics
+Generated for crecergrande.in
