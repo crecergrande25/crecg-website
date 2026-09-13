@@ -3,17 +3,17 @@
   "short_name": "Crecer Grande",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#071a36",
   "theme_color": "#071a36",
   "icons": [
     {
-      "src": "assets/images/icon-192.png",
-      "sizes": "192x192",
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "assets/images/icon-384.png",
-      "sizes": "384x384",
+      "src": "/assets/images/favicon.png",
+      "sizes": "64x64",
       "type": "image/png"
     }
   ]

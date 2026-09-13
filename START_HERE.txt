@@ -1,0 +1,62 @@
+CRECER GRANDE WEBSITE V2.0 — COMPLETE R4 UPGRADE
+================================================
+
+WHY R4 EXISTS
+-------------
+The live Supabase database is a mixed/legacy schema and did not fully match the intended V1.9.3 foundation.
+R4 normalizes the live schema before installing V2.0. It specifically handles:
+- legacy site_settings with text ID
+- legacy estimate_rules with extra columns and missing created_at
+- missing security/user/permission tables
+- missing CMS and analytics tables/functions
+- missing V2 columns on existing content tables
+- existing Ramiz/Sourav Auth users under @admin.crecergrande.in
+- duplicate/blank legacy slugs before unique indexes
+- old storage and RLS policies
+
+DO NOT RUN R1 / R2 / R3 AGAIN.
+
+STEP 1 — DATABASE
+-----------------
+1. Supabase > SQL Editor > New query.
+2. Open V2.0_MASTER_BACKEND_UPGRADE_R4.sql.
+3. Paste the ENTIRE file and click Run.
+4. Do not run only a selected portion.
+5. A successful result ends with JSON containing:
+   "status": "SUCCESS"
+   "version": "2.0-R4"
+
+R4 creates a committed pre-upgrade snapshot under:
+  cg_v2_backup_20260913_r4
+
+STEP 2 — VERIFY
+---------------
+Run POST_UPGRADE_VERIFY_R4.sql in a new SQL query.
+The final result should say PASS, and required tables/functions/columns should say EXISTS.
+
+STEP 3 — EDGE FUNCTION
+----------------------
+Deploy supabase/functions/admin-users/index.ts using the instructions in that folder.
+Never place a service_role key in website/browser code.
+
+STEP 4 — WEBSITE
+----------------
+Only after Steps 1-3 pass, deploy the CONTENTS of this V2.0 package to the existing GitHub Pages repository root.
+Keep CNAME, index.html, .nojekyll, sitemap.xml and robots.txt at the repository root.
+Do not change HostingRaja DNS.
+
+STEP 5 — TEST
+-------------
+- https://crecergrande.in/
+- https://crecergrande.in/admin/
+- Ramiz login
+- Sourav login
+- Dashboard / analytics
+- harmless CMS edit + public refresh
+- Audit Log attribution
+- one test RFQ
+- all six SEO service URLs
+
+STEP 6 — SEARCH CONSOLE
+-----------------------
+After V2.0 is live and verified, resubmit sitemap.xml and request indexing once for the six new service pages.
